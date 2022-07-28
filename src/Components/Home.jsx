@@ -9,16 +9,23 @@ import imge1 from '../assets/Photos/girl.png'
 import vectimg from '../assets/Photos/1.png'
 import imges from '../assets/Photos/2.png'
 import phone from '../assets/Photos/phone.png'
+import ssss from '../assets/Photos/sss.png'
    
 
 const Styleimg = styled("div")(({ theme }) => ({
         
   backgroundImage: `url(${Img})`,
-     height:'720x',
+     height:'700px',
   ' & img':{
         width:'100%',
           height:'720px'
-       }
+       },
+        [theme.breakpoints.down("lg")]:{
+      
+          ' & img':{
+              width:'100%'
+           }
+        }
 }))
 
 const Styledivs = styled("div")(({ theme})  => ({
@@ -84,13 +91,18 @@ color: '#FFFFFF'
 }))
 
 const Styleimg1 = styled("div" ) (({ theme })  => ({
-  marginTop:'40px',
+  marginTop:'240px',
   ' & img':{
     width:'100%',
-      height:'720px',
+      height:'500px',
       transform: 'matrix(1, 0, 0, 1, 0, 0)'
-      
-   }
+        
+   }, 
+    [theme.breakpoints.down("lg")]:{
+      ' & img':{
+        width:'100%'
+      }
+    }
 }))
 
 const Styledivsone = styled("div") (({ theme })  => ({
@@ -109,7 +121,14 @@ const Styledivsone = styled("div") (({ theme })  => ({
   
   letterSpacing: '0.4em',
   
-  color: '#121212'
+  color: '#121212',
+   
+  [theme.breakpoints.down("lg")]:{
+    ' & p':{
+
+    }
+  }
+   
 }))
 
 const Styledivstwo = styled("div")(({ theme }) => ({
@@ -126,7 +145,13 @@ const Styledivstwo = styled("div")(({ theme }) => ({
   fontSize: '55px',
   lineHeight: '82px',
   
-  color: '#111D5E'
+  color: '#111D5E',
+  [theme.breakpoints.down("lg")]:{
+    marginLeft:'-260px',
+    ' & p':{
+      
+    }
+  }
 }))
 
 const Styledivsthree = styled("div" ) (({ theme })  => ({
@@ -142,7 +167,10 @@ const Styledivsthree = styled("div" ) (({ theme })  => ({
   fontSize: '18px',
   lineHeight: '27px',
   
-  color: '#565656'
+  color: '#565656',
+  [theme.breakpoints.down("lg")]:{
+    marginLeft:'-255px'
+  }
   
 }))
 
@@ -151,7 +179,12 @@ const Styledivfour = styled("div") (({ theme } )  => ({
    left: '736px',
   top: '1250px', 
   position:'absolute',
-  color: '#000000'
+  color: '#000000',
+   [theme.breakpoints.down("lg")]:{
+    ' & p':{
+      marginLeft:'-260px'
+    }
+   }
 }))
 
 const Styledivfour1 = styled("div") (({ theme } ) => ({
@@ -160,6 +193,11 @@ const Styledivfour1 = styled("div") (({ theme } ) => ({
       fontSize:'18px',
       fontWeight:'600',
       fontFamily:'Poppins'
+     },
+     [theme.breakpoints.down("lg")]:{
+      ' & p':{
+        marginLeft:'-250px'
+      }
      }
 }))
 
@@ -171,7 +209,12 @@ const Styledivfour2 = styled("div") (({ theme } ) =>  ({
     fontSize:'18px',
     fontWeight:'600',
     fontFamily:'Poppins'
-   }
+   },
+    [theme.breakpoints.down("lg")]:{
+      ' & p':{
+        marginLeft:'-165px'
+      }
+    }
 }))
 
 const Styledivfour3 = styled("div")(({ theme }  )  => ({
@@ -182,7 +225,12 @@ const Styledivfour3 = styled("div")(({ theme }  )  => ({
     fontSize:'18px',
     fontWeight:'600',
     fontFamily:'Poppins'
-   }
+   },
+    [theme.breakpoints.down("lg")]:{
+      ' & p':{
+        marginLeft:'-85px'
+      }
+    }
 }))
 
 const Styledivfour4 = styled("div") (({ theme }) => ({
@@ -214,6 +262,9 @@ color: '#FFFFFF',
   marginLeft:"6px",
   color:'white',
   cursor:'pointer',
+ },
+ [theme.breakpoints.down("lg")]:{
+  marginLeft:'-250px'
  }
 }))
 
@@ -226,7 +277,7 @@ const Styleimg2 = styled("div") (({ theme })  => ({
      
    },
     [theme.breakpoints.down("lg")]:{
-      
+               
       ' & img':{
          marginTop:'100px'
        }
@@ -251,11 +302,11 @@ const Stylenewd = styled("div") (({ theme }) => ({
   
   color: '#FFFFFF',
   [theme.breakpoints.down("lg")]: {
-    marginTop:'40px',
+    marginTop:'390px',
      display:'flex',
      right:'20px',
          '& p':{
-          marginLeft:'-60px',
+          marginLeft:'-40px',
           display:'flex'
          } 
   }
@@ -280,11 +331,12 @@ const Stylenewdd = styled("div") (({ theme }) => ({
  
   color: '#FFFFFF',
   [theme.breakpoints.down("lg")]: {
-    marginTop:'60px',
-  
+    marginTop:'430px',
+    marginLeft:'-30px',
     fontSize:'30px',
     '& p':{
-      
+     
+  
      display:'flex'
     } 
 }
@@ -310,9 +362,12 @@ webkitTransform: 'rotate(45deg)',
           [theme.breakpoints.down("lg")]:{
           
             ' & img':{
-            marginLeft:'-60px',
-          
-             }
+            marginLeft:'-160px',
+              marginTop:'400px',
+              borderRadius:'20px',
+
+             },
+
           }
 }))
 
@@ -336,8 +391,9 @@ color: '#00BEE3'
     
     ' & p':{
          fontSize:'45px',
-         marginRight:'300px',
-         marginTop:'40px'
+         marginLeft:'-488px',
+         marginTop:'170px',
+         
     }
   }
   
@@ -363,12 +419,19 @@ const Style360  = styled("div") (({ theme })  => ({
   },
   [theme.breakpoints.down("lg")]: {
         ' & p':{
-          marginLeft:'230px',
-          fontSize:'15px',
+          marginLeft:'-490px',
+          fontSize:'15px',marginTop:'135px'
           
         }
   }
    
+}))
+
+const Styleimgscreen = styled("div") (({ theme })  => ({
+     ' & img':{
+      float:'right',
+      marginTop:'-40px'
+     }
 }))
 const Home = () => {
   return (
@@ -386,7 +449,9 @@ const Home = () => {
  Read More
  </Stylediv2>
  </Styleimg>
-
+<Styleimgscreen>
+<img src={ssss} />
+</Styleimgscreen>
  <Styleimg1>
 <center><img src={imge1} /></center>
 <Styledivsone>ABOUT US</Styledivsone>
