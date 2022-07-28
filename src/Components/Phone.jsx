@@ -9,7 +9,7 @@ import blue from '../assets/Photos/bluebanner.svg'
    
 const Styleimgs = styled("div") (({ theme })  => ({
   ' & img':{
-    marginTop:'20px'
+  
   }
 }))
 
@@ -43,10 +43,79 @@ const Stylediv = styled("div") (({ theme }) => ({
     },
       [theme.breakpoints.down("xl")]:{
         ' & button':{
-          marginLeft:'-42px',
-          marginTop:'-52px'
-        }
+          boxSizing: 'border-box',
+      
+          position: 'absolute',
+          width: '183px',
+          height: '47px',
+          left: '210px',
+          top: '656px',
+          
+          background: '#00BEE3',
+          border: '1px solid #000000',
+          borderRadius: '99px',
+          fontFamily: 'Poppins',
+        fontStyle: 'normal',
+        fontWeight: '400',
+        fontSize: '21px',
+        lineHeight: '36px',
+        display: 'auto',
+        alignItems: 'center',
+        textAlign: 'center',
+        color: '#FFFFFF',
+        cursor:'pointer'
       }
+      },
+      [theme.breakpoints.only("xl")]:{
+        ' & button':{
+          boxSizing: 'border-box',
+      
+          position: 'absolute',
+          width: '183px',
+          height: '47px',
+          left: '210px',
+          top: '650px',
+          
+          background: '#00BEE3',
+          border: '1px solid #000000',
+          borderRadius: '99px',
+          fontFamily: 'Poppins',
+        fontStyle: 'normal',
+        fontWeight: '400',
+        fontSize: '21px',
+        lineHeight: '36px',
+        display: 'auto',
+        alignItems: 'center',
+        textAlign: 'center',
+        color: '#FFFFFF',
+        cursor:'pointer'
+      }
+    },
+    [theme.breakpoints.up("lg")]:{
+      ' & button':{
+        boxSizing: 'border-box',
+    
+        position: 'absolute',
+        width: '183px',
+        height: '47px',
+        left: '250px',
+        top: '370px',
+        
+        background: '#00BEE3',
+        border: '1px solid #000000',
+        borderRadius: '99px',
+        fontFamily: 'Poppins',
+      fontStyle: 'normal',
+      fontWeight: '400',
+      fontSize: '21px',
+      lineHeight: '36px',
+      display: 'auto',
+      alignItems: 'center',
+      textAlign: 'center',
+      color: '#FFFFFF',
+      cursor:'pointer'
+    }
+    },
 }))
 
 const Phone = () => {
