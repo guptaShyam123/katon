@@ -132,7 +132,7 @@ const Phone = () => {
     <>
      <Styleimgs>
 
-  <img style={{width:'100%'}} src={banners} />
+  <img style={{width:'100%' }} src={banners} />
          <Stylediv>
          <button>Read more</button>
          <img  src={vectimg} />
