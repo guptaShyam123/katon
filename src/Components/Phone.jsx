@@ -6,14 +6,20 @@ import { useTheme } from "@mui/material/styles";
 import banners from '../assets/Photos/banner.svg'
 import photo from '../assets/Photos/111.svg'
 import blue from '../assets/Photos/bluebanner.svg'
+import vectimg from '../assets/Photos/Vector.png'
+
+
    
 const Styleimgs = styled("div") (({ theme })  => ({
-  ' & img':{
-  
-  }
+ 
+    
+
 }))
 
 const Stylediv = styled("div") (({ theme }) => ({
+   ' & img':{
+        height:'20px', width:'20x' , 
+   },
 
    [theme.breakpoints.up("xl")]:{
      ' & button':{
@@ -89,8 +95,11 @@ const Stylediv = styled("div") (({ theme }) => ({
         textAlign: 'center',
         color: '#FFFFFF',
         cursor:'pointer'
-      }
-    },
+      },
+
+    }, 
+   
+
     [theme.breakpoints.up("lg")]:{
       ' & button':{
         boxSizing: 'border-box',
@@ -126,6 +135,7 @@ const Phone = () => {
   <img style={{width:'100%'}} src={banners} />
          <Stylediv>
          <button>Read more</button>
+         <img  src={vectimg} />
          </Stylediv>
   </Styleimgs>   
 
